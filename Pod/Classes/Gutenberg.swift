@@ -16,10 +16,17 @@ public struct Emoji {
     }
 }
 
+public enum TranformTextOption {
+    case None
+    case LastOccurenceOnly
+}
+
 struct EmojiAttachment {
     let emoji: Emoji
     let textualRepresentation: NSAttributedString
 }
+
+typealias Occurence = (range: NSRange, replacement: NSAttributedString)
 
 public class Gutenberg {
     
@@ -29,7 +36,7 @@ public class Gutenberg {
     
     // MARK: - Public API
     
-    public class func transformTextWithEmojiCodes(text: String) -> NSAttributedString {
+    public class func transformTextWithEmojiCodes(text: String, option: TranformTextOption = .None) -> NSAttributedString {
         return self.sharedInstance._transformTextWithEmojiCodes(text)
     }
     
@@ -37,38 +44,30 @@ public class Gutenberg {
         self.sharedInstance._registerEmoji(emoji)
     }
     
+    public class func registerEmoji(emoji: Emoji...) {
+        emoji.forEach(registerEmoji)
+    }
+    
+    
     // MARK: - Private methods
     
     /**
      Transforms text with emoji codes into attrributed string with images
      
      Example: hello *sad* -> hello 😔
+    
+     @returns NSAttributedString with emoji if occurence found, otherwise nil 
     */
-    private func _transformTextWithEmojiCodes(text: String) -> NSAttributedString {
+    private func _transformTextWithEmojiCodes(text: String, option: TranformTextOption = .None) -> NSAttributedString {
+    
+        if text.characters.count == 0 {
+            return NSAttributedString(string: "")
+        }
         
-        var occurences: [(range: NSRange, replacement: NSAttributedString)] = []
-        let nstext = NSString(string: text)
+        let occurences = Gutenberg._occurencesWithOption(option)(text, self.emojis)
         
-        // Find all occurences in given text
-        for emojiAttch in self.emojis {
-            
-            var nextRange: NSRange? = nstext.rangeOfString(text)
-            
-            repeat {
-                
-                let range = nstext.rangeOfString(emojiAttch.emoji.code, options: NSStringCompareOptions(), range: nextRange!)
-                
-                if range.location != NSNotFound {
-                    occurences.append((range, emojiAttch.textualRepresentation))
-                    
-                    let startLocation = range.location + range.length
-                    let len = nstext.length - startLocation
-                    nextRange = NSMakeRange(startLocation, len)
-                } else {
-                    nextRange = nil
-                }
-                
-            } while nextRange != nil
+        if occurences.count == 0 {
+            return NSAttributedString(string: text)
         }
         
         // Sort the occurences from the last to the first
@@ -83,6 +82,58 @@ public class Gutenberg {
         }
         
         return attr
+    }
+    
+    private class func _occurencesWithOption(option: TranformTextOption = .None) -> (NSString, [EmojiAttachment]) -> [Occurence] {
+        
+        switch option {
+        case .None:
+            return Gutenberg._findAllOccurencesInText
+        case .LastOccurenceOnly:
+            return Gutenberg._findLastOccurenceInText
+        }
+        
+    }
+    
+    // Find all occurences in given text
+    private class func _findAllOccurencesInText(text: NSString, emojis: [EmojiAttachment]) ->  [Occurence] {
+
+        var occurences: [Occurence] = []
+        
+        for emojiAttch in emojis {
+            
+            var nextRange: NSRange? = text.rangeOfString(text as String)
+            
+            repeat {
+                
+                let range = text.rangeOfString(emojiAttch.emoji.code, options: NSStringCompareOptions(), range: nextRange!)
+                
+                if range.location != NSNotFound {
+                    occurences.append((range, emojiAttch.textualRepresentation))
+                    
+                    let startLocation = range.location + range.length
+                    let len = text.length - startLocation
+                    nextRange = NSMakeRange(startLocation, len)
+                } else {
+                    nextRange = nil
+                }
+                
+            } while nextRange != nil
+        }
+        
+        return occurences
+    }
+    
+    // Find only last occurence in string
+    private class func _findLastOccurenceInText(text: NSString, emojis: [EmojiAttachment]) -> [Occurence] {
+        for emojiAttch in emojis {
+            let range = text.rangeOfString(emojiAttch.emoji.code, options: NSStringCompareOptions.BackwardsSearch)
+            if range.location != NSNotFound {
+                return [(range, emojiAttch.textualRepresentation)]
+            }
+        }
+        
+        return []
     }
     
     /**

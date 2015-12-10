@@ -23,15 +23,33 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTS-lG-a31">
+                                <rect key="frame" x="20" y="120" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9B-uO-HwR">
+                                <rect key="frame" x="254.5" y="200.5" width="91" height="30"/>
+                                <state key="normal" title="Show in label"/>
+                                <connections>
+                                    <action selector="showInLabel:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lRd-Z7-o3i"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dTS-lG-a31" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="8dT-ZT-dkq"/>
                             <constraint firstItem="pxR-H1-wyI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="Dmq-kG-HYL"/>
+                            <constraint firstAttribute="trailing" secondItem="dTS-lG-a31" secondAttribute="trailing" constant="20" id="Vci-si-q61"/>
                             <constraint firstAttribute="trailing" secondItem="pxR-H1-wyI" secondAttribute="trailing" constant="20" id="aZl-2D-Uvk"/>
+                            <constraint firstItem="f9B-uO-HwR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="lTJ-8l-mhP"/>
                             <constraint firstItem="pxR-H1-wyI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="pgA-Og-V20"/>
+                            <constraint firstItem="f9B-uO-HwR" firstAttribute="top" secondItem="dTS-lG-a31" secondAttribute="bottom" constant="50" id="vMg-EV-9nZ"/>
+                            <constraint firstItem="dTS-lG-a31" firstAttribute="top" secondItem="pxR-H1-wyI" secondAttribute="bottom" constant="50" id="zeg-pk-7RD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="textField" destination="dTS-lG-a31" id="Qt3-Ve-YOO"/>
                         <outlet property="textLabel" destination="pxR-H1-wyI" id="6t4-z1-pNX"/>
                     </connections>
                 </viewController>
