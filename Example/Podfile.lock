@@ -1,0 +1,14 @@
+PODS:
+  - Gutenberg (0.1.0)
+
+DEPENDENCIES:
+  - Gutenberg (from `../`)
+
+EXTERNAL SOURCES:
+  Gutenberg:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Gutenberg: f82c608e109c95f3609ca552e3ccc2ea2e95e360
+
+COCOAPODS: 0.39.0
