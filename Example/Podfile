@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'Gutenberg_Example', :exclusive => true do
+  pod "Gutenberg", :path => "../"
+end
+
+target 'Gutenberg_Tests', :exclusive => true do
+  pod "Gutenberg", :path => "../"
+
+  
+end
