@@ -149,3 +149,9 @@ public class Gutenberg {
     }
     
 }
+
+public extension UILabel {
+    func gtb_text(text: String) {
+        self.attributedText = Gutenberg.transformTextWithEmojiCodes(text)
+    }
+}
