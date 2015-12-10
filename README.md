@@ -12,7 +12,7 @@ Gutenberg is tiny library that can generate NSAttributedString from given string
 
 Import Gutenberg
 
-```
+```swift
 import Gutenberg
 ```
 
