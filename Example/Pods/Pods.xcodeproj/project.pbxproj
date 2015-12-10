@@ -8,39 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		14DA415E29B5353B7CCA6801751891D5 /* Pods-Gutenberg_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A0E43A8093C819C486FA36010F22C1 /* Pods-Gutenberg_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B34898D91FF00AAD3FCDCA1B5C8476 /* Gutenberg-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC8C38208A6955CC759ADE9D727FED9E /* Gutenberg-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33602CFCD41157A5182DC35B98EECAC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		3F92095572181A032233D569079DE7AC /* Pods-Gutenberg_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B04428C052C9DC83CF40ED17020F2F88 /* Pods-Gutenberg_Example-dummy.m */; };
 		49CEE0B0B07B8F581BDC7F20E780A130 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		60A8247641F967EBFAEE9206D7AA762A /* Gutenberg-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAD1F02AD3FA3BF7E6ADBC0E3991B72 /* Gutenberg-dummy.m */; };
+		54E98085996DD6326164DAE23F8BC278 /* Gutenberg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415001F4B898C64A78C01C871AEF5071 /* Gutenberg.swift */; };
+		675F5EC7DB88CB2CD0BA8C0347B7FDC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		6D872A8BBA51587AD0AFC1D0D472492E /* Pods-Gutenberg_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21385E245AA4D96FA1CB08AFDDA95735 /* Pods-Gutenberg_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9017BAB41C19F24400ACB2FA /* GutenbergLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9017BAB31C19F24400ACB2FA /* GutenbergLabel.swift */; };
-		9017BAB61C19F44200ACB2FA /* Gutenberg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9017BAB51C19F44200ACB2FA /* Gutenberg.swift */; };
+		AA942D133DE2DE1BBC78087C34E9A429 /* GutenbergLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB755598159FAF04205460801B745EDC /* GutenbergLabel.swift */; };
+		B59001642E2A4277C2DB67764693C249 /* Gutenberg-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAD1F02AD3FA3BF7E6ADBC0E3991B72 /* Gutenberg-dummy.m */; };
 		C512881E08D0EBBEED327FFC13DD3414 /* Pods-Gutenberg_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB194D822924F315B0B76F64E04E9B7B /* Pods-Gutenberg_Tests-dummy.m */; };
-		D4901C3DEE11ED7D79170FA00747CA61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		D908750612CA063AD28941F35B27912C /* Gutenberg.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 743D68C876B15B244810970345259E34 /* Gutenberg.bundle */; };
+		C61A230C6999B944FC3B4B5E8C718729 /* Gutenberg.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 743D68C876B15B244810970345259E34 /* Gutenberg.bundle */; };
+		E56C14C51C245D7981B51188A0E89031 /* Gutenberg-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC8C38208A6955CC759ADE9D727FED9E /* Gutenberg-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C91A0D8ECC37E9E476736895B02EAEC2 /* PBXContainerItemProxy */ = {
+		883CEA6192B8ECE7193DB6E5AD1D3D0D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 42F88FC09A18C111984898E42BFDD525;
+			remoteGlobalIDString = 7A418288B5C4BBA79F4C0F1FCE3E7BF7;
 			remoteInfo = "Gutenberg-Gutenberg";
 		};
 		CFBE009602080E7081A9F0411A1DE052 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DD244822A2BB8F2BEA2F65070BFDD516;
+			remoteGlobalIDString = 55F5F5D9BDFA11FE35527000321B62E7;
 			remoteInfo = Gutenberg;
 		};
 		D1AFED19E5BFD20E969CBE5E22BEDAD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DD244822A2BB8F2BEA2F65070BFDD516;
+			remoteGlobalIDString = 55F5F5D9BDFA11FE35527000321B62E7;
 			remoteInfo = Gutenberg;
 		};
 /* End PBXContainerItemProxy section */
@@ -51,14 +51,13 @@
 		21385E245AA4D96FA1CB08AFDDA95735 /* Pods-Gutenberg_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gutenberg_Example-umbrella.h"; sourceTree = "<group>"; };
 		36A36F8A1482FFE7AC646B6D0D748524 /* Pods-Gutenberg_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Gutenberg_Tests-resources.sh"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		415001F4B898C64A78C01C871AEF5071 /* Gutenberg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Gutenberg.swift; sourceTree = "<group>"; };
 		41819CBC2387806833661D593F02A653 /* Gutenberg.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Gutenberg.modulemap; sourceTree = "<group>"; };
 		53A0E43A8093C819C486FA36010F22C1 /* Pods-Gutenberg_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gutenberg_Tests-umbrella.h"; sourceTree = "<group>"; };
 		61CD0F102BE774F8EAE3A5397607A792 /* Pods-Gutenberg_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Gutenberg_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		72C9873111F54A29AFE3F31B33C1B9B1 /* Pods_Gutenberg_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gutenberg_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		743D68C876B15B244810970345259E34 /* Gutenberg.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gutenberg.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7D9372E3AD16425A5B034295172ED1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9017BAB31C19F24400ACB2FA /* GutenbergLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GutenbergLabel.swift; sourceTree = "<group>"; };
-		9017BAB51C19F44200ACB2FA /* Gutenberg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gutenberg.swift; sourceTree = "<group>"; };
 		9347ECF54C88BB96276812E7C6F4CC59 /* Gutenberg-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gutenberg-prefix.pch"; sourceTree = "<group>"; };
 		99C65B2718FCCBB49492F95F05AA6A26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6795F6E0ADF0475006962075613289E /* Pods-Gutenberg_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Gutenberg_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -78,16 +77,17 @@
 		CE1684984127EE054CE97AA4295F7693 /* Gutenberg.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gutenberg.xcconfig; sourceTree = "<group>"; };
 		D5CFC892F9810542E2B180E0EE37BCD0 /* Pods_Gutenberg_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gutenberg_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33FA8CC86BB4856A07462C971B543DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB755598159FAF04205460801B745EDC /* GutenbergLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GutenbergLabel.swift; sourceTree = "<group>"; };
 		EF50543E0CA4E1C791850321254DBF41 /* Pods-Gutenberg_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Gutenberg_Tests.modulemap"; sourceTree = "<group>"; };
 		F10CDE28F5B22153A11EB62C1397790C /* Pods-Gutenberg_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gutenberg_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		88E0338C282B41BC5EDAE685A8F7C82D /* Frameworks */ = {
+		8F6E8A5C1A2DBB942889ED6930A90CDD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4901C3DEE11ED7D79170FA00747CA61 /* Foundation.framework in Frameworks */,
+				675F5EC7DB88CB2CD0BA8C0347B7FDC7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D44B9D022892B17358CE062834BCD6FE /* Frameworks */ = {
+		CC1708DD3C565DE56D3A0C1D0C632B1B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -117,6 +117,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361BB6A10CE22BD51893282CA68D7D6C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				415001F4B898C64A78C01C871AEF5071 /* Gutenberg.swift */,
+				EB755598159FAF04205460801B745EDC /* GutenbergLabel.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		39AABA5C8777AE87611571DD9183B4C6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				361BB6A10CE22BD51893282CA68D7D6C /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
 		4605F97BCFDCC0884EA2614B89D22107 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +217,7 @@
 		CE4E29DFC809094DA6C26129C8DB2DB4 /* Gutenberg */ = {
 			isa = PBXGroup;
 			children = (
-				DCC05074B8E234415B9497717DA0DE16 /* Pod */,
+				39AABA5C8777AE87611571DD9183B4C6 /* Pod */,
 				D309F8FB703A10E3C8C24124FCBCB851 /* Support Files */,
 			);
 			name = Gutenberg;
@@ -219,23 +236,6 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Gutenberg";
-			sourceTree = "<group>";
-		};
-		DCC05074B8E234415B9497717DA0DE16 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E0948887A4CE953390DA480EAD3502BD /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		E0948887A4CE953390DA480EAD3502BD /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				9017BAB31C19F24400ACB2FA /* GutenbergLabel.swift */,
-				9017BAB51C19F44200ACB2FA /* Gutenberg.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		FA292EDC242E4BF10841A700BCA554DA /* Products */ = {
@@ -268,24 +268,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5D960A4449E6689731C02145EE476B4 /* Headers */ = {
+		CD7FFF760C2707DEC78361143DAE22DD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20B34898D91FF00AAD3FCDCA1B5C8476 /* Gutenberg-umbrella.h in Headers */,
+				E56C14C51C245D7981B51188A0E89031 /* Gutenberg-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		42F88FC09A18C111984898E42BFDD525 /* Gutenberg-Gutenberg */ = {
+		55F5F5D9BDFA11FE35527000321B62E7 /* Gutenberg */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9095EE78015728A46F8AF60F5AE807F8 /* Build configuration list for PBXNativeTarget "Gutenberg-Gutenberg" */;
+			buildConfigurationList = B4B27AED1328720EE09BF01844FF658E /* Build configuration list for PBXNativeTarget "Gutenberg" */;
 			buildPhases = (
-				7053E71E900F27D18843E45235A8E9FA /* Sources */,
-				D44B9D022892B17358CE062834BCD6FE /* Frameworks */,
-				BDF476EA4521706BD3B9213797D06374 /* Resources */,
+				2E30F297E4CF4570C798996C1607C551 /* Sources */,
+				8F6E8A5C1A2DBB942889ED6930A90CDD /* Frameworks */,
+				3A22F5BAD39392EBC6138C8A02749096 /* Resources */,
+				CD7FFF760C2707DEC78361143DAE22DD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A0D8B190F4E305322E35D8D96D82EAC /* PBXTargetDependency */,
+			);
+			name = Gutenberg;
+			productName = Gutenberg;
+			productReference = A87196F1A5D1D5B4BEC13E9E680CF851 /* Gutenberg.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A418288B5C4BBA79F4C0F1FCE3E7BF7 /* Gutenberg-Gutenberg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED526730FC3DA5A3B074D3F560176A7 /* Build configuration list for PBXNativeTarget "Gutenberg-Gutenberg" */;
+			buildPhases = (
+				848D6606842D6DA4143D3DA30AD3B54E /* Sources */,
+				CC1708DD3C565DE56D3A0C1D0C632B1B /* Frameworks */,
+				F0ED83F0FACD1F34E76063F761E248F4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -314,25 +333,6 @@
 			productReference = 72C9873111F54A29AFE3F31B33C1B9B1 /* Pods_Gutenberg_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DD244822A2BB8F2BEA2F65070BFDD516 /* Gutenberg */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BFA187691DA91CE95CE41714A705DABB /* Build configuration list for PBXNativeTarget "Gutenberg" */;
-			buildPhases = (
-				293297EC1100F367A2C4ABA3E21C08EF /* Sources */,
-				88E0338C282B41BC5EDAE685A8F7C82D /* Frameworks */,
-				5B4A88B5D7BF24A9F55B73B73AC181ED /* Resources */,
-				B5D960A4449E6689731C02145EE476B4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CD485BBB343DD554CA37C6E8EEF6D4FA /* PBXTargetDependency */,
-			);
-			name = Gutenberg;
-			productName = Gutenberg;
-			productReference = A87196F1A5D1D5B4BEC13E9E680CF851 /* Gutenberg.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		EDEDB5868F055D079F0EABAD10C5CA51 /* Pods-Gutenberg_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 040D24B8CF25CEB8C61ED8B36CFD1E9E /* Build configuration list for PBXNativeTarget "Pods-Gutenberg_Tests" */;
@@ -357,7 +357,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -372,8 +372,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DD244822A2BB8F2BEA2F65070BFDD516 /* Gutenberg */,
-				42F88FC09A18C111984898E42BFDD525 /* Gutenberg-Gutenberg */,
+				55F5F5D9BDFA11FE35527000321B62E7 /* Gutenberg */,
+				7A418288B5C4BBA79F4C0F1FCE3E7BF7 /* Gutenberg-Gutenberg */,
 				DAA814573A2B80CA980EDC73A1A5ED02 /* Pods-Gutenberg_Example */,
 				EDEDB5868F055D079F0EABAD10C5CA51 /* Pods-Gutenberg_Tests */,
 			);
@@ -381,15 +381,15 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5B4A88B5D7BF24A9F55B73B73AC181ED /* Resources */ = {
+		3A22F5BAD39392EBC6138C8A02749096 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D908750612CA063AD28941F35B27912C /* Gutenberg.bundle in Resources */,
+				C61A230C6999B944FC3B4B5E8C718729 /* Gutenberg.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDF476EA4521706BD3B9213797D06374 /* Resources */ = {
+		F0ED83F0FACD1F34E76063F761E248F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -407,13 +407,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		293297EC1100F367A2C4ABA3E21C08EF /* Sources */ = {
+		2E30F297E4CF4570C798996C1607C551 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9017BAB41C19F24400ACB2FA /* GutenbergLabel.swift in Sources */,
-				60A8247641F967EBFAEE9206D7AA762A /* Gutenberg-dummy.m in Sources */,
-				9017BAB61C19F44200ACB2FA /* Gutenberg.swift in Sources */,
+				B59001642E2A4277C2DB67764693C249 /* Gutenberg-dummy.m in Sources */,
+				54E98085996DD6326164DAE23F8BC278 /* Gutenberg.swift in Sources */,
+				AA942D133DE2DE1BBC78087C34E9A429 /* GutenbergLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +425,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7053E71E900F27D18843E45235A8E9FA /* Sources */ = {
+		848D6606842D6DA4143D3DA30AD3B54E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -438,20 +438,20 @@
 		049A1476145170CD091FD365AE968866 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Gutenberg;
-			target = DD244822A2BB8F2BEA2F65070BFDD516 /* Gutenberg */;
+			target = 55F5F5D9BDFA11FE35527000321B62E7 /* Gutenberg */;
 			targetProxy = CFBE009602080E7081A9F0411A1DE052 /* PBXContainerItemProxy */;
 		};
 		0B3DA62811F9B79BBD222B667F4FB7DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Gutenberg;
-			target = DD244822A2BB8F2BEA2F65070BFDD516 /* Gutenberg */;
+			target = 55F5F5D9BDFA11FE35527000321B62E7 /* Gutenberg */;
 			targetProxy = D1AFED19E5BFD20E969CBE5E22BEDAD9 /* PBXContainerItemProxy */;
 		};
-		CD485BBB343DD554CA37C6E8EEF6D4FA /* PBXTargetDependency */ = {
+		4A0D8B190F4E305322E35D8D96D82EAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Gutenberg-Gutenberg";
-			target = 42F88FC09A18C111984898E42BFDD525 /* Gutenberg-Gutenberg */;
-			targetProxy = C91A0D8ECC37E9E476736895B02EAEC2 /* PBXContainerItemProxy */;
+			target = 7A418288B5C4BBA79F4C0F1FCE3E7BF7 /* Gutenberg-Gutenberg */;
+			targetProxy = 883CEA6192B8ECE7193DB6E5AD1D3D0D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -521,11 +521,10 @@
 			};
 			name = Debug;
 		};
-		34BF936A852944E0827C461E66D23CAA /* Release */ = {
+		2B53E0449D946A77D5FD5236052CDFBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE1684984127EE054CE97AA4295F7693 /* Gutenberg.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -610,6 +609,18 @@
 			};
 			name = Debug;
 		};
+		4A81823F519B6EE76A8CA0D5FCB702E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1684984127EE054CE97AA4295F7693 /* Gutenberg.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = Gutenberg;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -649,7 +660,7 @@
 			};
 			name = Debug;
 		};
-		AAE9571B17E0247BF4544CC9B9AAC697 /* Release */ = {
+		6B218E0EEBCF21771F4ADA0E5C2EA5D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE1684984127EE054CE97AA4295F7693 /* Gutenberg.xcconfig */;
 			buildSettings = {
@@ -659,17 +670,33 @@
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
-		ACD5E82E93D5B29A3918BEB40C86271E /* Debug */ = {
+		DE871F72603145447BD0AC30C7C66F4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE1684984127EE054CE97AA4295F7693 /* Gutenberg.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gutenberg/Gutenberg-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gutenberg/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gutenberg/Gutenberg.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = Gutenberg;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -703,35 +730,6 @@
 			};
 			name = Release;
 		};
-		F8C935F7900ED571AB3CCE0A933729A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE1684984127EE054CE97AA4295F7693 /* Gutenberg.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Gutenberg/Gutenberg-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Gutenberg/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Gutenberg/Gutenberg.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Gutenberg;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -762,20 +760,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9095EE78015728A46F8AF60F5AE807F8 /* Build configuration list for PBXNativeTarget "Gutenberg-Gutenberg" */ = {
+		4ED526730FC3DA5A3B074D3F560176A7 /* Build configuration list for PBXNativeTarget "Gutenberg-Gutenberg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ACD5E82E93D5B29A3918BEB40C86271E /* Debug */,
-				AAE9571B17E0247BF4544CC9B9AAC697 /* Release */,
+				6B218E0EEBCF21771F4ADA0E5C2EA5D0 /* Debug */,
+				4A81823F519B6EE76A8CA0D5FCB702E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFA187691DA91CE95CE41714A705DABB /* Build configuration list for PBXNativeTarget "Gutenberg" */ = {
+		B4B27AED1328720EE09BF01844FF658E /* Build configuration list for PBXNativeTarget "Gutenberg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F8C935F7900ED571AB3CCE0A933729A3 /* Debug */,
-				34BF936A852944E0827C461E66D23CAA /* Release */,
+				DE871F72603145447BD0AC30C7C66F4A /* Debug */,
+				2B53E0449D946A77D5FD5236052CDFBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

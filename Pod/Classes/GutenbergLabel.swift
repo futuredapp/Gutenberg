@@ -6,9 +6,9 @@
 //
 //
 
-class GutenbergLabel: UILabel {
+public class GutenbergLabel: UILabel {
     
-    override var text: String? {
+    public override var text: String? {
         didSet {
             if let text = text {
                 self.attributedText = Gutenberg.transformTextWithEmojiCodes(text)

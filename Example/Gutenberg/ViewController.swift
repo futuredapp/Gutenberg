@@ -15,6 +15,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let emoji1 = Emoji(code: "*muah*", image: UIImage(named: "small_smile_17")!)
+        let emoji2 = Emoji(code: "*D'oh*", image: UIImage(named: "small_smile_18")!)
+        
+        Gutenberg.registerEmoji(emoji1)
+        Gutenberg.registerEmoji(emoji2)
+        
+        let testText = "Hello *D'oh* lol *muah* trala *muah*"
+        
+        textLabel.text = testText
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

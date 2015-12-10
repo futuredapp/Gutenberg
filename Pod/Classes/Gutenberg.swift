@@ -9,6 +9,11 @@
 public struct Emoji {
     let code: String
     let image: UIImage
+    
+    public init(code: String, image: UIImage) {
+        self.code = code
+        self.image = image
+    }
 }
 
 struct EmojiAttachment {
@@ -24,11 +29,11 @@ public class Gutenberg {
     
     // MARK: - Public API
     
-    class func transformTextWithEmojiCodes(text: String) -> NSAttributedString {
+    public class func transformTextWithEmojiCodes(text: String) -> NSAttributedString {
         return self.sharedInstance._transformTextWithEmojiCodes(text)
     }
     
-    class func registerEmoji(emoji: Emoji) {
+    public class func registerEmoji(emoji: Emoji) {
         self.sharedInstance._registerEmoji(emoji)
     }
     
@@ -42,14 +47,28 @@ public class Gutenberg {
     private func _transformTextWithEmojiCodes(text: String) -> NSAttributedString {
         
         var occurences: [(range: NSRange, replacement: NSAttributedString)] = []
+        let nstext = NSString(string: text)
         
         // Find all occurences in given text
         for emojiAttch in self.emojis {
-            let range = NSString(string: text).rangeOfString(emojiAttch.emoji.code)
             
-            if range.location != NSNotFound {
-                occurences.append((range, emojiAttch.textualRepresentation))
-            }
+            var nextRange: NSRange? = nstext.rangeOfString(text)
+            
+            repeat {
+                
+                let range = nstext.rangeOfString(emojiAttch.emoji.code, options: NSStringCompareOptions(), range: nextRange!)
+                
+                if range.location != NSNotFound {
+                    occurences.append((range, emojiAttch.textualRepresentation))
+                    
+                    let startLocation = range.location + range.length
+                    let len = nstext.length - startLocation
+                    nextRange = NSMakeRange(startLocation, len)
+                } else {
+                    nextRange = nil
+                }
+                
+            } while nextRange != nil
         }
         
         // Sort the occurences from the last to the first
@@ -57,14 +76,13 @@ public class Gutenberg {
             return occ1.range.location > occ2.range.location
         }
         
-        // Debug print
+        let attr = NSMutableAttributedString(string: text)
+        
         sortedRanges.forEach { occ in
-            print(occ.range)
+            attr.replaceCharactersInRange(occ.range, withAttributedString: occ.replacement)
         }
         
-        var attr = NSMutableAttributedString(string: text)
-        
-        return NSAttributedString()
+        return attr
     }
     
     /**
