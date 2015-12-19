@@ -7,8 +7,8 @@
 //
 
 public struct Emoji {
-    let code: String
-    let image: UIImage
+    public let code: String
+    public let image: UIImage
     
     public init(code: String, image: UIImage) {
         self.code = code
