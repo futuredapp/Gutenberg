@@ -9,10 +9,12 @@
 public struct Emoji {
     public let code: String
     public let image: UIImage
+    public let largeImage: UIImage?
     
-    public init(code: String, image: UIImage) {
+    public init(code: String, image: UIImage, largeImage: UIImage? = nil) {
         self.code = code
         self.image = image
+        self.largeImage = largeImage
     }
 }
 
