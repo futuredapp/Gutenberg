@@ -9,10 +9,12 @@
 public struct Emoji {
     public let code: String
     public let image: UIImage
+    public let largeImage: UIImage?
     
-    public init(code: String, image: UIImage) {
+    public init(code: String, image: UIImage, largeImage: UIImage? = nil) {
         self.code = code
         self.image = image
+        self.largeImage = largeImage
     }
 }
 
@@ -33,6 +35,8 @@ public class Gutenberg {
     static let sharedInstance = Gutenberg()
     
     private var emojis: [EmojiAttachment] = []
+    private var yOffset: CGFloat = 0
+    private var defaultHeight: CGFloat?
     
     // MARK: - Public API
     
@@ -48,6 +52,13 @@ public class Gutenberg {
         emoji.forEach(registerEmoji)
     }
     
+    public class func setDefaultYOffset(offset: CGFloat) {
+        self.sharedInstance.yOffset = offset
+    }
+    
+    public class func setDefaultHeight(height: CGFloat?) {
+        self.sharedInstance.defaultHeight = height
+    }
     
     // MARK: - Private methods
     
@@ -143,6 +154,12 @@ public class Gutenberg {
         
         let attachment = NSTextAttachment()
         attachment.image = emoji.image
+        attachment.bounds = {
+            // scale image if needed
+            let height = self.defaultHeight ?? emoji.image.size.height
+            let scale = height / emoji.image.size.height
+            return CGRectMake(0, yOffset, emoji.image.size.width * scale, height)
+        }()
         let attr = NSAttributedString(attachment: attachment)
         
         self.emojis.append(EmojiAttachment(emoji: emoji, textualRepresentation: attr))

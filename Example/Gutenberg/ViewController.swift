@@ -20,6 +20,9 @@ class ViewController: UIViewController {
         let emoji1 = Emoji(code: "*angry*", image: UIImage(named: "angry")!)
         let emoji2 = Emoji(code: "*grin*", image: UIImage(named: "grin")!)
         
+        
+        Gutenberg.setDefaultHeight(textLabel.font.lineHeight)
+        Gutenberg.setDefaultYOffset(textLabel.font.descender)
         Gutenberg.registerEmoji(emoji1, emoji2)
         
         let testText = "Hey! *grin* Where are you? *angry*"

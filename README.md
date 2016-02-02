@@ -23,6 +23,13 @@ let emoji1 = Emoji(code: "*angry*", image: UIImage(named: "angry")!)
 let emoji2 = Emoji(code: "*grin*", image: UIImage(named: "grin")!)
 ```
 
+Set default height and offset based on your preferred font so the emojis are aligned nicely (optional)
+
+```swift
+Gutenberg.setDefaultHeight(self.textLabel.font.lineHeight)
+Gutenberg.setDefaultYOffset(self.textLabel.font.descender)
+```
+
 And register them
 
 ```swift
